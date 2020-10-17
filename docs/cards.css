@@ -1,0 +1,41 @@
+body {
+	margin: 10px;
+	color: #294762;
+}
+.card-list {
+	display: flex;
+	margin-bottom: 20px;
+}
+.row {
+  display: flex;
+  border: 1px solid lightgrey;
+  margin: 10px;
+  padding: 50px 20px;
+  box-shadow: 3px 3px lightgrey
+}
+.column1 {
+  flex: 40%;
+  right-padding: 10px;
+}
+.column2 {
+  flex: 50%;
+  left-padding: 10px;
+}
+.phrase {
+	font-style: italic;
+	margin-bottom: 15px;
+}
+.posts {
+	border: 1px solid lightgrey;
+	padding: 40px 20px 80px 20px;
+	box-shadow: 3px 3px lightgrey;
+}
+.post-title {
+	font-size: 20px;
+	margin-bottom: 12px;
+	text-transform: capitalize;
+}
+.post-content {
+	font-size: 13px;
+	margin-bottom: 20px;
+}
