@@ -40,10 +40,6 @@ const normalizeCardsData = (cardsList = []) => {
 	const cardsData = {};
 	randomCards.forEach((card) => {
 		cardsData[card.id] = card;
-		analytics.track('Selected card', {
-			name: card.name
-		  });
-		console.log(card.name);
 	});
 
 	return cardsData;

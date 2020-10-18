@@ -9,6 +9,9 @@ const CardsList = ({cardsData, onSelectHandler}) => {
 		
 		const onClickHandler = (evt) => {
 			evt.stopPropagation();
+			analytics.track('Selected card', {
+				name: card.name
+			});
 			onSelectHandler(id);
 		};
 
