@@ -36,12 +36,15 @@ class App extends Component {
 
 		return (
 			<div>
-				{cardsData && 
-					<CardsList cardsData={cardsData} onSelectHandler={onSelectHandler} />
-				}
-				{postsData && postsData[currentUser] && 
-					<UserPosts postsList={postsData[currentUser]} />
-				}
+				<h3>Cards Demo</h3>
+				<div>
+					{cardsData && 
+						<CardsList cardsData={cardsData} onSelectHandler={onSelectHandler} />
+					}
+					{postsData && postsData[currentUser] && 
+						<UserPosts postsList={postsData[currentUser]} />
+					}
+				</div>
 			</div>
 		);
 	}
